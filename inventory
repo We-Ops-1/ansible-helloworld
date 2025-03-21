@@ -1,0 +1,6 @@
+# Inventory file listing the VPS servers
+# This file defines the target machines for the Ansible playbook.
+# Each VPS is associated with an IP address and user.
+
+[vps]
+0.0.0.0 ansible_user=ubuntu ansible_password=my-pass ansible_become=yes

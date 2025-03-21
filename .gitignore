@@ -1,0 +1,71 @@
+# Ansible-specific files
+*.retry
+
+# Ignore temporary files and logs
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.sw?
+
+# Ignore Python virtual environments (if you use one for dependencies)
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Ignore sensitive or secret files
+secrets.yml
+*.vault
+*.enc
+
+# Ignore SSH key files
+*.pem
+*.key
+*.cert
+*.pub
+
+# Ignore inventory files that may have sensitive information
+inventory/
+!inventory/sample_inventory.ini  # Allow sample inventory for documentation
+
+# Ignore editor and IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Ansible Galaxy roles downloaded
+roles/*/
+!roles/README.md  # Keep README if documenting custom roles
+
+# Ignore Terraform files if used in the project
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Ignore compressed and archive files
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.gz
+
+# Ignore binary executables
+*.exe
+*.out
+*.o
+
+# Ignore lock files
+.lock
+
+# Ignore environment files
+.env
+.env.*
+.envrc
